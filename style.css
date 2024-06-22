@@ -1,0 +1,488 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+html, body {
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden; /* Prevents horizontal scrolling */
+}
+body {
+  background-color: black;
+}
+/*Above will apply to all elements on the html page*/
+.main {
+  background-image: url(background.jpg);
+  height: 100vh;
+  position: relative;
+  width: 100%; /* Ensure it covers the full viewport width */
+
+  /* position: relative: Allows absolutely positioned children (like .box) to be positioned relative to .main. */
+}
+/*Without making box the picture contrast can't be set black , that's why we made the separate box of same height and 100percent width 
+in order to background picture dark black*/
+.main .box {
+  height: 500vh;
+  width: 100%;
+  background-color: black;
+  opacity: 0.6;
+  position: absolute;
+  top: 0;
+}
+nav {
+  max-width: 80vw;
+  margin: auto;
+  display: flex;
+
+  justify-content: space-between; /* Spread out nav items */
+  padding: 20px 20px; /* Add some padding */
+  position: relative; /* Ensure nav is positioned correctly */
+  top: 10px;
+  height: 62px;
+}
+nav img {
+  width: 145px;
+  position: relative;
+  z-index: 10;
+
+  /* position: relative: Ensures the logo is positioned relative to its normal position.
+z-index: 10: Ensures the logo appears above other elements if there are any overlapping issues. */
+}
+nav button {
+  position: relative;
+  z-index: 10;
+}
+.content {
+  height: 80%;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 23px;
+  text-align: center;
+
+  /*height is given used here to justify-content vertically*/
+}
+#span1 {
+  font-weight: 900;
+  font-style: normal;
+  font-size: 48px;
+}
+#span2 {
+  font-weight: 300;
+  font-style: normal;
+  font-size: 24px;
+}
+#span3 {
+  font-weight: 300;
+  font-style: normal;
+  font-size: 20px;
+}
+.separation1 {
+  background-color: gray;
+  height: 7px;
+}
+.separation5 {
+  background-color: gray;
+  height: 7px;
+}
+.separation3 {
+  background-color: gray;
+  height: 7px;
+  margin-top: 1340px;
+}
+.separation4 {
+  background-color: gray;
+  height: 7px;
+  margin-top: 30px;
+}
+.separation2 {
+  background-color: gray;
+  height: 7px;
+  margin-top: 140px;
+}
+
+.btnRed1 {
+  background-color: rgba(255, 0, 0, 0.921);
+  color: white;
+  font-size: 15px;
+  padding: 7px 15px;
+  border-radius: 5px;
+  font-weight: 500;
+}
+.btnRed2 {
+  background-color: rgba(255, 0, 0, 0.921);
+  color: white;
+  font-size: 23px;
+  padding: 14px 36px;
+  border-radius: 5px;
+  font-weight: 550;
+}
+#email1 {
+  font-size: 15px;
+  padding: 17px 167px 17px 19px;
+  border-radius: 5px;
+  background-color: rgba(23, 23, 23, 0.7);
+  /* In above , the fourth value is of Opacity) */
+  color: white;
+  font-weight: 500;
+  border: 1px solid rgba(246, 238, 238, 0.7);
+}
+/*Above can also be written as .main input{ //css properties } */
+
+.contentButtons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.first {
+  display: flex;
+  color: white;
+  justify-content: center;
+  max-width: 70vw;
+  align-items: center;
+  margin: auto;
+  position: relative;
+}
+.second {
+  display: flex;
+  color: white;
+  flex-direction: row;
+  justify-content: center;
+  max-width: 90vw;
+
+  position: relative;
+}
+.third {
+  color: white;
+  position: relative;
+  z-index: 10;
+
+  margin-left: 320px;
+  margin-top: 150px;
+}
+.fourth {
+  color: white;
+  position: relative;
+  z-index: 10;
+  justify-content: center;
+
+  max-width: 90vw;
+}
+
+.secImage img {
+  position: absolute;
+  width: 35vw;
+  z-index: 10;
+}
+
+.secImage video {
+  position: relative;
+  max-width: 30vw;
+
+  top: 40px;
+  right: 0px;
+}
+.section1Content :first-child {
+  font-size: 48px;
+  font-weight: bolder;
+}
+.section1Content :nth-child(2) {
+  font-size: 24px;
+}
+.section1Content {
+  display: flex;
+  flex-direction: column;
+  margin-top: 100px;
+  gap: 15px;
+}
+.section2Content {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  margin-top: 100px;
+  margin-left: 120px;
+}
+.section3Content {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.section4Content {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  margin-top: 100px;
+  margin-left: 120px;
+}
+.section2Content :first-child {
+  font-size: 48px;
+  font-weight: bolder;
+}
+.section2Content :nth-child(2) {
+  font-size: 24px;
+}
+
+.section3Content :first-child {
+  font-size: 48px;
+  font-weight: 900;
+}
+.section3Content :nth-child(2) {
+  font-size: 24px;
+  font-weight: 400;
+}
+.section4Content :first-child {
+  font-size: 48px;
+  font-weight: 900;
+}
+.section4Content :nth-child(2) {
+  font-size: 24px;
+  font-weight: 400;
+}
+.sec2Image {
+  display: flex;
+  flex-direction: row;
+  padding-left: 60px;
+}
+.sec4Image {
+  display: flex;
+  flex-direction: row;
+  padding-left: 100px;
+  margin-top: 30px;
+}
+.sec2Image img {
+  width: 35vw;
+}
+.sec4Image img {
+  width: 35vw;
+}
+.faq h2 {
+  text-align: center;
+  font-size: 48px;
+}
+.faq {
+  position: relative;
+  z-index: 10;
+  background: black;
+  color: white;
+  margin-top: 50px;
+}
+.faqbox img {
+  filter: invert(1); /*It will make the plus sign white colored*/
+  /*The other method to make svg white is to type fill="white" in svg code and also give white as value in stroke located in its code*/
+}
+.faqbox {
+  transition: all 0.3s ease-out;
+  display: flex;
+  font-size: 24px;
+  background-color: #2d2d2d;
+  justify-content: space-between;
+  margin: auto;
+  padding: 30px;
+  max-width: 60vw;
+  margin-top: 30px;
+  cursor: pointer;
+}
+.faqbox:hover {
+  background-color: rgba(128, 128, 128, 0.499);
+}
+footer {
+  position: relative;
+
+  justify-content: center;
+  color: white;
+  align-items: center;
+  margin-left: 190px;
+  margin-top: 70px;
+}
+.footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr; /*It creates four columns*/
+  color: white;
+}
+.footer a {
+  color: white;
+  font-size: 14px;
+}
+.footer-item {
+  display: flex;
+  flex-direction: column;
+  gap: 23px;
+}
+footer span {
+  text-align: center;
+  margin: 2px 30vw;
+}
+
+@media only screen  and (min-width:340px) and (max-width:589px){
+.main{
+  width: 100%;
+}
+}
+@media only screen and (min-width:340px) and (max-width:630px){
+ .contentButtons{
+
+  flex-direction: column;
+ }
+  .sec2Image{
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+ }
+ .sec4Image{
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+ }
+ .first{
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+ }
+ 
+}
+@media only screen and (min-width:591px) and (max-width:815px){
+  .third{
+   
+  margin: 0%;
+  margin-left: 100px;
+  margin-top: 100px;
+   
+   
+  }
+}
+@media only screen and (min-width:340px) and (max-width:588px){
+ .footer{
+  margin-left: -130px;
+  
+ }
+ .footer-item{
+  height: 50px;
+  width: 50px;
+ }
+  .nav{
+  max-width: 160vw;
+ }
+
+  .sec2Image img{
+    width: 60vw;
+
+  }
+  .secImage img{
+    width: 56vw;
+    
+    
+  }
+  .secImage video{
+  
+   max-width: 48vw;
+  }
+  .sec4Image img{
+    width: 56vw;
+    margin-top: 10px;
+  }
+
+
+  .second{
+    
+    margin: auto;
+    
+
+  }
+
+ 
+  .section4Content{
+    margin-bottom: 50px;
+    margin-left: 20px;
+  }
+  .section2Content{
+    margin-bottom: 50px;
+    margin-left: 20px;
+  }
+  .section1Content :first-child {
+    font-size: 32px;
+    font-weight: bolder;
+  }
+  .section1Content :nth-child(2) {
+    font-size: 18px;
+  }
+  .section2Content :first-child {
+    font-size: 32px;
+    font-weight: bolder;
+  }
+  .section2Content :nth-child(2) {
+    font-size: 18px;
+  }
+  
+  .section3Content :first-child {
+    font-size: 32px;
+    font-weight: 900;
+  }
+  .section3Content :nth-child(2) {
+    font-size: 18px;
+    font-weight: 400;
+  }
+  .section4Content :first-child {
+    font-size: 32px;
+    font-weight: 900;
+  }
+  .section4Content :nth-child(2) {
+    font-size: 18px;
+    font-weight: 400;
+  }
+  .section2Content{
+    width: 80vw;
+  }
+
+  .section3Content{
+    margin-left: -260px;
+    align-items: center;
+  }
+  
+ .separation3{
+width: 200vw
+ }
+ .separation4{
+  width: 200vw
+   }
+ .separation5{
+  width: 200vw
+   }
+
+   
+   .nav{
+    gap: 50px;
+   }
+   
+
+}
+@media only screen and (min-width:340px) and (max-width:576px){
+  .faqbox{
+    width: 300px;
+  }
+}
+@media only screen and (min-width:589px){
+  .footer{
+    margin-left: -100px;
+    
+   }
+}
+@media only screen and (min-width:340px) and (max-width:399px){
+ #email1{
+  padding: 14px 120px 15px 16px;
+ } 
+}
+
+
+
+
+
